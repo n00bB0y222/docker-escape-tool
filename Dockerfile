@@ -13,4 +13,4 @@ RUN useradd -ms /bin/bash notroot
 RUN ln -s /etc/ssl/certs/ca-certificates.crt /etc/ssl/cert.pem
 RUN chown -R notroot:notroot /escape
 # USER notroot
-ENTRYPOINT ./docker-escape auto 
+ENTRYPOINT bash
